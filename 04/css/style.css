@@ -12,7 +12,13 @@ h2, h3{
 	font-family: 'Arvo', serif;
 }
 
-@media only screen and (min-width:1101px){
+/* @media (min-width:1101px){ */
+
+#otter1{
+	background: lime;
+}
+
+/*
 	.otter{
 		width:100%;
 		height:100%;
@@ -35,6 +41,7 @@ h2, h3{
 		padding-top: 10%;
 		text-shadow: 0px 0px 15px black;
 	}
+*/
 	
 	#otter2{
 		display: none;
@@ -42,15 +49,28 @@ h2, h3{
 	#otter3{
 		display: none;
 	}
-}
+/* } */
 
-@media only screen and (min-width:501 px) and (max-width:1100px){
-	#otter2{
-		width:100%;
-		height:100%;
-		background: url("../images/cover.png") center top;
-}
+@media (min-width:500px px) and (max-width:1100px){
+		
+/*
+	#otter1{
+		display: none;
+	}
+*/
+
+	#otter1{
+		display: none;
+		
+	}
 	
+	#otter2{
+		background: pink;
+	
+		
+	}
+	
+/*
 	#otter2 h2{
 		font-size: 2.5em;
 		font-style: italic;
@@ -63,16 +83,14 @@ h2, h3{
 		color:#eaff00;
 		text-align: center;
 	}
-	
-	#otter1{
-		display: none;
-	}
+
 	#otter3{
 		display: none;
 	}
+*/
 }
 
-@media only screen and (min-width:0px) and (max-width:500){
+@media (min-width:0px) and (max-width:500){
 	#otter3{
 		
 		

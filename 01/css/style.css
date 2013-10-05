@@ -1,8 +1,70 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('font/GothamHTF-Bold.otf');
+}
+
+@font-face {
+	font-family: 'GothamBook';
+	src: url('font/GothamHTF-Book.otf');
+}
+
+@font-face {
+	font-family: 'GothamLight';
+	src:url('font/GothamHTF-XLight.otf');
+
+}
+
 html,body{
- font-family: 'Gotham';
 	width:100%;
 	height:100%;
 }
+
+h1{
+	font-family: 'GothamBold';
+}
+
+h2{
+	font-family: 'GothamLight';
+	
+}
+
+.navigation{
+	position:fixed;
+	z-index:1;
+	top:20px;
+}
+.navigation li{
+	color:#333333;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	font-family: 'GothamBook';
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	border-bottom:1px solid black;
+	text-align:left;
+	width:53px;
+	font-size: 13px;
+}
+.navigation li:hover,.active{
+	font-size:25px;
+	cursor:pointer;
+	width:100px!important;
+}
+
+.scrollbutton {
+  display: block;
+  position: absolute;
+  left:%;
+  bottom:;
+  width: px;
+  height: px;
+  background: url("") center center no-repeat; }
