@@ -3,78 +3,125 @@
 <html>
 <head>
 	<title>esca - the essence of food</title>
+		<meta name="author" content="Francesca Castelli & Albert Kim">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Food, engineered food, synthetic, taste, molecular taste">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<meta name="author" content="Francesca Castelli & Albert Kim">
 		
 		<!-- Style Sheets & Javascript -->
-		<link rel="stylesheet" href="css/styleFood.css"/>
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+		<link rel="stylesheet" href="css/styleFood.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,700,800' rel='stylesheet' type='text/css'>
+		
 </head>	
 
 <body>
 	<div id="container">
-		<section id="intro">
-			<img id ="hero" src="http://placekitten.com/200/300"/>
-			<img id ="logo" src="http://placekitten.com/200/300"/>
-			<h1>Esca</h1>
+
+		<div id = "molecule">
+			<img id ="logo" src="img/logo3.png"/>
+		</div>
+
+		<!-- Intro Page -->
+
+		<section id="intro" class="story" data-speed="8" data-type="background">    	
+		<div class="intro-panel" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-0.5"></div>	
+			<img id ="hero" src="img/cover4.png"/>
+			<img id ="name" src="img/name.png"/>
+<!-- 			<h1>Esca</h1> -->
 			<h2>the essence of food</h2>
 		</section>
+
+		<!-- Second Page -->
 		
-		<section id="description">
+		<section id="intro-text" class="story" data-speed="8" data-type="background">    	
+			<article id="description">
 			<h1>Esca</h1>
-			<p>is dedicated to helping you make the highest of all fabricated foods. 
+			<p>is dedicated to helping you make the best of all fabricated foods. 
 			We serve to bring you the best ingredients and it all begins here, with our FDA approved synthetic protein.</p>
+			</article>
 		</section>
-		
 		
 		<!-- The Ingredients -->
 		
-		<section id="creation">
-			<figure id="molecule"> 
-				<img src="xx" alt=""/>
-			</figure>
-			<article>
-				<h1></h1>
-				<p></p>
+		<section id="creation" class="story" data-speed="8" data-type="background">    	
+		<div class="creation-panel" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-0.5"></div>	
+			
+			<article id="ingredients">
+				<h2>The Ingredients</h2>
+				<p>We've devised synthetic chemical solutions, infused with all of the nutrients needed, 
+				that's derived from the best synthetic ingredients from around the globe.
+				</p>
 			</article>	
 		</section>
 		
 		<!-- Mixing Process -->
 		
-		<section id="mixing-process">
+		<section id="mixing-process" class="story" data-speed="8" data-type="background">    		
+			<article id="mixing">
+				<h2>The Mixing Process</h2>
+				<p>In large cauldrons, we mix the powdered ingredients into a liquid solution. After a thorough mixing, each solution is dispensed into a package.</p>
+			</article>
 		</section>
 		
 		<!-- Flavors -->
 		
-		<section id="flavors">
+		<section id="infusion" class="story" data-speed="8" data-type="background">    	
+		<div class="infusion-panel" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>	
+			<article id="flavors">
+				<h2>The Flavors</h2>
+				<p>Infused with flavors of all kinds. Each mixture is then treated with the flavors we all love.
+				</p>
+			</article>
 		</section>
 		
 		<!-- Shipping -->
 		
-		<section id="shipping">
+		<section id="shipping" class="story" data-speed="20" data-type="background">
+			
+			<article id="packaging">
+				<h2>The Shipping</h2>
+				<p>Now your ESCA is ready to be shipped</p>	
+			</article>	
+
+			<article id="delivery">
+				<h2>The Arrival</h2>
+				<p>When the ingredient arrives, you are now prepared to fabricate your own ESCA food.</p>
+				 
+			</article>
 		</section>
 		
 		<!-- Arrival -->
 		
-		<section id="arrival">
-		</section>
 		
 		<!-- DIY -->
 		
-		<section id="diy">
+		<section id="diy" class="story" data-speed="20" data-type="background"> 
+		<div class="arrival-panel" data-type="sprite" data-offsetY="300" data-Xposition="50%" data-speed="-2"></div>       	
+			<article id="set-up">
+				<h2>DIY</h2>
+				<p>The ESCA printer is perfectly designed for the most ease of use. Add your favorite flavors to the compartment to get a desired product.</p>
+			</article>
 		</section>
 		
 		<!-- Printing -->
 		
-		<section id="printing">
+		<section id="printing" class="story" data-speed="30" data-type="background">    	
+		<div class="printing-panel" data-type="sprite" data-offsetY="1000" data-Xposition="50%" data-speed="2"></div>	
+			<article id="food-shapes">
+				<h2>Printing</h2>
+				<p>Download any of our templates and print any shapes as you please</p>
+			</article>
 		</section>
 		
 		<!-- Eating -->
 		
-		<section id="eating">
+		<section id="eating" class="story" data-speed="25" data-type="background">    	
+			<article id="enjoy">
+				<h2>Enjoy!</h2>
+				<p>Now eat your artificial food, taste the chemical flavors, and get addicted!
+				</p>
 		</section>
 	
 	</div>
@@ -83,9 +130,13 @@
 
 <footer>
 	<h1>Remember how terrible were those days of real food?</h1>
-	<div id="real-food">
 		<a href="xx.html">
-        <img src="xx" alt=""/>
+        <img id="pasta" src="img/real-food3.png" alt=""/>
         </a>
 </footer>	
+
+
+<script type = "text/javascript" src = "http://code.jquery.com/jquery-latest.js"></script>
+<script type = "text/javascript" src = "js/esca.js"></script>
+
 </html>
