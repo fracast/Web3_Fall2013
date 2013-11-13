@@ -1,0 +1,23 @@
+body{
+	background: -webkit-radial-gradient(#ffffff 0%, #a3a3a3 100%);
+	text-align: center;
+}
+
+h1{
+	font-family: 'Dosis';
+	font-weight:'800';
+	font-size: 36px;
+}
+
+h2{
+	font-family: 'Dosis';
+	font-weight:'400';
+	font-size: 24px;
+}
+
+h3{
+	font-family: 'Dosis';
+	font-weight:'200';
+	font-size: 12px;
+}
+

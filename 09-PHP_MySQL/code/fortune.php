@@ -1,15 +1,24 @@
 <?php
+
+ $fortune = array();
+ 
  //connect to database
- $mysql = mysql_connet("127.0.0.1", "root", "root");
+ $mysql = mysql_connect("127.0.0.1", "root", "root");
  
  //select the table
- mysql_select_db('FortuneCookieMonter', $mysql);
+ mysql_select_db('FortuneCookieMonster', $mysql);
  
  //get stuff from database
  $sql  = "SELECT fortune FROM Fortunes";
  $query = mysql_query($sql);
  
- $data = mysql_fetch_assoc($query);
- print_r($data);
+ while ($data = mysql_fetch_assoc($query)){
+ 
+ array_push($fortune, $data["fortune"]);
+ 
+/* 	 echo $data["fortune"]; */
+ }
+ 
+ print_r($fortune);
  
  ?>
